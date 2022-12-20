@@ -1,0 +1,23 @@
+.header-menu-dos {
+  display: flex;
+  background-color: blue;
+  justify-content: flex-end;
+  padding: 1rem;
+  width: 100%;
+  height: 20px;
+  align-items: center;
+}
+
+.header-menu-dos li {
+  padding: 0 0.5rem;
+}
+
+.header-menu-dos li a {
+  font-weight: 300;
+  color: #222;
+}
+
+.header-menu-dos li a:hover {
+  color: white;
+  transition: all 0.2s ease;
+}
