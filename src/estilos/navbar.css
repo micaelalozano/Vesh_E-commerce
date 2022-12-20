@@ -39,6 +39,7 @@
 
 .hamburguer {
   display: none;
+  z-index: 4;
 }
 
 @media screen and (max-width: 700px) {
@@ -51,13 +52,14 @@
     background: rgba(123, 163, 124);
     position: absolute;
     top: 0;
-    left: -100%;
+    left: -500%;
     z-index: -3;
-    transition: 0.3s;
+    transition: 0.6s;
   }
 
   .nav-menu.active {
     left: 0;
+    top: -71%;
   }
 
   .nav-menu li {
@@ -69,7 +71,7 @@
     display: initial;
   }
 
-  .header {
+  .head {
     height: 40px;
   }
 }
