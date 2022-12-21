@@ -41,18 +41,18 @@
   font-size: 4rem;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: row;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 120%;
+  top: 90%;
   left: 50%;
   text-align: center;
   padding: 4rem 1rem;
 }
 
-form input {
+.form input {
   outline: none;
   padding: 6px 15px;
   font-size: 1rem;
@@ -94,8 +94,11 @@ form input {
     left: 0;
     z-index: -1;
   }
+  .form {
+    top: 90%;
+  }
 
-  form input {
+  .form input {
     font-size: 0.8rem;
   }
 }

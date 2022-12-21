@@ -14,7 +14,7 @@ const Favoritos = () => {
         <div className="car-contenedor1">
           <h3 className="hijo">
             <span className="icon1">favorite</span>
-            <strong> TUS FAVORITOS </strong>
+            <strong> MIS FAVORITOS </strong>
             <span className="icon">favorite</span>
           </h3>
           <p className="hijo2"> No tienes favoritos.</p>
