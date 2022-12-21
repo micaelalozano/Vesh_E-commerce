@@ -67,6 +67,7 @@
 
   .cruz {
     position: fixed;
+    font-size: 35px;
     top: 3%;
     right: 0;
     cursor: pointer;

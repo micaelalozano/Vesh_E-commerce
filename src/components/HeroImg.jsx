@@ -10,7 +10,7 @@ const HeroImg = () => {
         <div className="content">
           <h1>Tienda Online de VESH</h1>
           <div className="form">
-            <form>
+            <form className="form">
               <input type="search" placeholder="Escribe lo que buscas"  />
               <button className="btn">
                 <SearchIcon className="icon-btn" />

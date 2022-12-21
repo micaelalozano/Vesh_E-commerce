@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Carrito from "./pages/Carrito";
 import Favoritos from "./pages/Favoritos";
 import Inicio from "./pages/Inicio";
 import Login from "./pages/Login";
@@ -11,6 +12,7 @@ const App = () => {
         <Route exact path="/" element={<Inicio />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/mis_favoritos" element={<Favoritos />} />
+        <Route exact path="/mi_carrito" element={<Carrito />} />
       </Routes>
     </>
   );

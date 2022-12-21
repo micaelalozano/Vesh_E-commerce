@@ -30,7 +30,7 @@ const NavDos = () => {
         </ul>
         <div className="hamburguer" onClick={handleClick}>
           {click ? (
-            <FaTimes className="cruz" size={30} style={{ color: "#fff" }}/>
+            <FaTimes className="cruz" style={{ color: "#fff" }} />
           ) : (
             <FaBars size={30} style={{ color: "#fff" }} />
           )}
