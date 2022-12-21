@@ -1,0 +1,75 @@
+.header-dos {
+  background-color: tan;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: solid 2px #222;
+  width: 100%;
+  height: 30px;
+}
+
+.nav-menu-nav {
+  display: flex;
+}
+
+.nav-menu-nav li {
+  padding: 0 0.5rem;
+}
+
+.nav-menu-nav li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline 0.2em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+
+.nav-menu-nav li a:hover {
+  color: white;
+  transition: all 0.2s ease;
+  text-decoration-color: white;
+}
+
+.hamburguer {
+  display: none;
+  z-index: 4;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-menu-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(123, 163, 124);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 3;
+    transition: 0.3s;
+  }
+
+  .nav-menu-nav.active {
+    left: 0;
+  }
+
+  .nav-menu-nav li {
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .hamburguer {
+    display: initial;
+  }
+
+  .cruz {
+    position: fixed;
+    top: 3%;
+    right: 0;
+    cursor: pointer;
+    padding-right: 1rem;
+  }
+}
