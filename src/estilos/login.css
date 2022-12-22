@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
   color: #222;
   font-size: 280%;
+  margin-top: 5rem;
 }
 
 .form-sesion {
@@ -24,6 +24,7 @@
   padding: 6px 15px;
   font-size: smaller;
   border: tan solid 3px;
+  width: 100%;
 }
 
 .btn-div {
@@ -68,5 +69,10 @@
 @media screen and (max-width: 700px) {
   .inicio {
     font-size: 200%;
+    margin-top: 7rem;
+  }
+
+  .form-sesion {
+    padding: 4rem 1rem;
   }
 }
