@@ -8,6 +8,9 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
+  const [clickDos, setClickDos] = useState(false);
+  const handleClickDos = () => setClickDos(!clickDos);
+
   const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 100) {
@@ -30,8 +33,10 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link to="/productos">Productos</Link>
-          <ul className="children">
+          <p onClick={handleClickDos}>
+            Productos <span className="material-icons">expand_more</span>
+          </p>
+          <ul className={clickDos ? "children" : "sub-menu"}>
             <li>1</li>
             <li>2</li>
             <li>3</li>
