@@ -10,20 +10,15 @@
   z-index: 10;
 }
 
-.header-bg {
-  background-color: rgba(0, 0, 0, 0.85);
-  transition: 0.5s;
-}
-
 .nav-menu {
   display: flex;
 }
 
-.nav-menu li {
-  padding: 0 0.5rem;
+.nav-menu .li {
+  padding: 0 0.7rem;
 }
 
-.nav-menu li a {
+.nav-menu .li {
   font-size: 1.1rem;
   font-weight: 600;
   color: white;
@@ -32,13 +27,13 @@
   cursor: pointer;
 }
 
-.nav-menu li a:hover {
+.nav-menu li:hover {
   color: white;
   transition: all 0.2s ease;
   text-decoration-color: white;
 }
 
-p {
+.p-2 {
   font-size: 1.1rem;
   font-weight: 600;
   color: white;
@@ -47,7 +42,7 @@ p {
   cursor: pointer;
 }
 
-p:hover {
+.p-2:hover {
   color: white;
   transition: all 0.2s ease;
   text-decoration-color: white;
@@ -67,27 +62,33 @@ p:hover {
 .nav-menu li .children {
   display: block;
   margin-top: 5px;
-  background-color: blue;
+  background-color: rgba(241, 228, 228, 0.3);
   position: absolute;
-  width: 10%;
+  width: 15%;
   z-index: 1000;
+  border-top: 1px solid black;
 }
 
 .nav-menu li .children li {
   display: block;
   overflow: hidden;
   border-bottom: 1px solid black;
-  padding: 5px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 8px;
+  font-size: 1rem;
+  color: black;
 }
 
 .nav-menu li .children li:hover {
+  background-color: #333;
   color: white;
-  transition: all 0.2s ease;
+  font-weight: bolder;
 }
 
 /*{ICONOS}*/
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   margin-top: 2.2px;
   float: right;
   font-weight: normal;
@@ -101,15 +102,14 @@ p:hover {
   direction: ltr;
 }
 
-
 @media screen and (max-width: 700px) {
   .nav-menu {
     flex-direction: column;
-    justify-content: center;
     align-items: left;
+    padding-top: 10rem;
     width: 100%;
     height: 100vh;
-    background: rgba(123, 163, 124);
+    background: tan;
     position: absolute;
     top: 0;
     left: -500%;
@@ -119,12 +119,19 @@ p:hover {
 
   .nav-menu.active {
     left: 0;
-    top: -71%;
+    top: -90%;
   }
 
-  .nav-menu li {
+  .nav-menu .li {
     padding: 1rem 1em;
-    font-size: 2rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid black;
+  }
+
+  .p-2 {
+    padding: 1rem 1em;
+    font-size: 1.1rem;
+    border-bottom: 1px solid black;
   }
 
   .hamburguer {
@@ -134,24 +141,34 @@ p:hover {
   .head {
     height: 40px;
   }
+
   .nav-menu li .sub-menu {
     display: none;
   }
 
   .nav-menu li .children {
     display: block;
-    background-color: blue;
+    background-color: rgb(180, 153, 118);
     position: relative;
     width: 100%;
+    border-top: none;
+    margin-top: 0px;
   }
 
   .nav-menu li .children li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding: 1rem 1em;
     font-size: 1rem;
+    color: white;
   }
 
   .material-icons {
-    font-family: 'Material Icons';
-    margin-top: 2.2px;
+    font-family: "Material Icons";
+    margin-top: 1px;
     font-weight: normal;
     font-style: normal;
     font-size: 1.3rem;
@@ -162,5 +179,4 @@ p:hover {
     white-space: nowrap;
     direction: ltr;
   }
-
 }

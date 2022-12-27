@@ -8,6 +8,9 @@ const NavDos = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
+  const [clickDos, setClickDos] = useState(false);
+  const handleClickDos = () => setClickDos(!clickDos);
+
   return (
     <>
       <div className="header-dos">
@@ -15,16 +18,30 @@ const NavDos = () => {
           <h1>VESH</h1>
         </Link>
         <ul className={click ? "nav-menu-nav active" : "nav-menu-nav"}>
-          <li>
+          <li className="li">
             <Link to="/">Inicio</Link>
           </li>
+
           <li>
-            <Link to="/proyectos">Productos</Link>
+            <p className="pi" onClick={handleClickDos}>
+              Productos <span className="material-icons">expand_more</span>
+            </p>
+            <ul className={clickDos ? "children" : "sub-menu"}>
+              <Link to="/productos">
+                {" "}
+                <li>Ver todos los productos</li>{" "}
+              </Link>
+              <li>Tops/Remeras</li>
+              <li>Sweaters</li>
+              <li>Pantalones</li>
+              <li>Vestidos</li>
+            </ul>{" "}
           </li>
-          <li>
+
+          <li className="li">
             <Link to="/acerca_de_mi">Acerca de</Link>
           </li>
-          <li>
+          <li className="li">
             <Link to="/contacto">Contacto</Link>
           </li>
         </ul>

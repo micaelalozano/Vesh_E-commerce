@@ -11,42 +11,36 @@ const Navbar = () => {
   const [clickDos, setClickDos] = useState(false);
   const handleClickDos = () => setClickDos(!clickDos);
 
-  const [color, setColor] = useState(false);
-  const changeColor = () => {
-    if (window.scrollY >= 100) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
-
-  window.addEventListener("scroll", changeColor);
-
   return (
-    <div className={color ? "header header-bg" : "header"}>
+    <div className="header">
       <Link to="/">
         <h1>VESH</h1>
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
+        <li className="li">
           <Link to="/">Inicio</Link>
         </li>
 
         <li>
-          <p onClick={handleClickDos}>
+          <p className="p-2" onClick={handleClickDos}>
             Productos <span className="material-icons">expand_more</span>
           </p>
           <ul className={clickDos ? "children" : "sub-menu"}>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            <Link to="/productos">
+              {" "}
+              <li>Ver todos los productos</li>{" "}
+            </Link>
+            <li>Tops/Remeras</li>
+            <li>Sweaters</li>
+            <li>Pantalones</li>
+            <li>Vestidos</li>
           </ul>
         </li>
 
-        <li>
+        <li className="li">
           <Link to="/acerca_de_mi">Acerca de</Link>
         </li>
-        <li>
+        <li className="li">
           <Link to="/contacto">Contacto</Link>
         </li>
       </ul>
