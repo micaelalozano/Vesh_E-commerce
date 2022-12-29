@@ -33,4 +33,17 @@ router.get("/:id", (req, res) => {
   });
 });
 
+//Editar Productos:
+router.put("/:id", (req, res) => {
+  const { id } = req.params;
+  const { name, clase, descripcion, precio, talle, imagen } = req.body;
+
+  Productos.update(
+    { name, clase, descripcion, precio, talle, imagen },
+    { where: { id } }
+  ).then((data) => {
+    res.status(200).send(data);
+  });
+});
+
 module.exports = router;
