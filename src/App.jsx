@@ -4,6 +4,7 @@ import Carrito from "./pages/Carrito";
 import Favoritos from "./pages/Favoritos";
 import Inicio from "./pages/Inicio";
 import Login from "./pages/Login";
+import ProductosList from "./pages/ProductosList";
 import Register from "./pages/Register";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Route exact path="/registrar" element={<Register />} />
         <Route exact path="/mis_favoritos" element={<Favoritos />} />
         <Route exact path="/mi_carrito" element={<Carrito />} />
+        <Route exact path="/productos" element={<ProductosList />} />
       </Routes>
     </>
   );
