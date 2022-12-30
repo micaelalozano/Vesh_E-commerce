@@ -6,7 +6,7 @@ import FootDos from "../components/FootDos";
 //Estilos
 import "../estilos/productosList.css";
 
-const ProductosList = () => {
+const SweaterList = () => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -18,7 +18,14 @@ const ProductosList = () => {
       });
   }, []);
 
-  console.log(productos);
+  //Filtrar clase de producto:
+  let sweaters = [];
+  for (let i = 0; i < productos.length; i++) {
+    if (productos[i].clase === "Sweater") {
+      sweaters.push(productos[i]);
+    }
+  }
+////////////////////////////////////////////
 
   return (
     <>
@@ -26,7 +33,7 @@ const ProductosList = () => {
       <NavDos />
       <ul>
         <div className="card-container">
-          {productos.map(function (e, i) {
+          {sweaters.map(function (e, i) {
             return (
               <li key={i}>
                 <div className="card">
@@ -44,4 +51,4 @@ const ProductosList = () => {
   );
 };
 
-export default ProductosList;
+export default SweaterList;
