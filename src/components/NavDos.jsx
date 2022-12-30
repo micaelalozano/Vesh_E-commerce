@@ -28,14 +28,21 @@ const NavDos = () => {
             </p>
             <ul className={clickDos ? "children" : "sub-menu"}>
               <Link to="/productos">
-                {" "}
-                <li>Ver todos los productos</li>{" "}
+                <li>Ver todos los productos</li>
               </Link>
-              <li>Tops/Remeras</li>
-              <li>Sweaters</li>
-              <li>Pantalones</li>
-              <li>Vestidos</li>
-            </ul>{" "}
+              <Link to="/top_y_remeras">
+                <li>Tops/Remeras</li>
+              </Link>
+              <Link to="/sweaters">
+                <li>Sweaters</li>
+              </Link>
+              <Link to="/pantalones">
+                <li>Pantalones</li>
+              </Link>
+              <Link to="/vestidos">
+                <li>Vestidos</li>
+              </Link>
+            </ul>
           </li>
 
           <li className="li">

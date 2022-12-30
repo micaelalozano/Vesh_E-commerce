@@ -6,7 +6,7 @@ import FootDos from "../components/FootDos";
 //Estilos
 import "../estilos/productosList.css";
 
-const ProductosList = () => {
+const TopList = () => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -18,7 +18,15 @@ const ProductosList = () => {
       });
   }, []);
 
-  console.log(productos);
+    //Filtrar clase de producto:
+    let tops = [];
+    for (let i = 0; i < productos.length; i++) {
+      if (productos[i].clase === "Top") {
+        tops.push(productos[i]);
+      }
+    }
+    console.log(tops);
+    ///////////////////////////////////////
 
   return (
     <>
@@ -26,7 +34,7 @@ const ProductosList = () => {
       <NavDos />
       <ul>
         <div className="card-container">
-          {productos.map(function (e, i) {
+          {tops.map(function (e, i) {
             return (
               <li key={i}>
                 <div className="card">
@@ -44,4 +52,4 @@ const ProductosList = () => {
   );
 };
 
-export default ProductosList;
+export default TopList;

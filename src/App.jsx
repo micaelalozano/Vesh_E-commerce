@@ -6,6 +6,10 @@ import Inicio from "./pages/Inicio";
 import Login from "./pages/Login";
 import ProductosList from "./pages/ProductosList";
 import Register from "./pages/Register";
+import SweaterList from "./pages/SweaterList";
+import TopList from "./pages/TopList";
+import PantalonesList from "./pages/PantalonesList";
+import VestidosList from "./pages/VestidosList";
 
 const App = () => {
   return (
@@ -17,6 +21,10 @@ const App = () => {
         <Route exact path="/mis_favoritos" element={<Favoritos />} />
         <Route exact path="/mi_carrito" element={<Carrito />} />
         <Route exact path="/productos" element={<ProductosList />} />
+        <Route exact path="/top_y_remeras" element={<TopList />} />
+        <Route exact path="/sweaters" element={<SweaterList />} />
+        <Route exact path="/pantalones" element={<PantalonesList />} />
+        <Route exact path="/vestidos" element={<VestidosList />} />
       </Routes>
     </>
   );
