@@ -10,6 +10,7 @@ import SweaterList from "./pages/SweaterList";
 import TopList from "./pages/TopList";
 import PantalonesList from "./pages/PantalonesList";
 import VestidosList from "./pages/VestidosList";
+import Detalles from "./pages/Detalles";
 
 const App = () => {
   return (
@@ -25,6 +26,11 @@ const App = () => {
         <Route exact path="/sweaters" element={<SweaterList />} />
         <Route exact path="/pantalones" element={<PantalonesList />} />
         <Route exact path="/vestidos" element={<VestidosList />} />
+        <Route
+          exact
+          path="/producto_detalles/:detalle_id"
+          element={<Detalles />}
+        />
       </Routes>
     </>
   );
