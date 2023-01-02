@@ -5,7 +5,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  padding: 3rem 0rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
 }
 
