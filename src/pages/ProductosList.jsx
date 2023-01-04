@@ -32,13 +32,13 @@ const ProductosList = () => {
           {productos.map(function (e, i) {
             return (
               <li key={i}>
-                <div className="card">
-                  <Link to={"/producto_detalles/" + e.id}>
+                <Link to={"/producto_detalles/" + e.id}>
+                  <div className="card">
                     <img className="img-card" src={e.imagen} alt="" />
-                  </Link>
-                  <h3> {e.name} </h3>
-                  <p> ${e.precio} </p>
-                </div>
+                  </div>{" "}
+                </Link>
+                <h3> {e.name} </h3>
+                <p> ${e.precio} </p>
               </li>
             );
           })}

@@ -40,13 +40,13 @@ const SweaterList = () => {
           {sweaters.map(function (e, i) {
             return (
               <li key={i}>
-                <div className="card">
-                  <Link to={"/producto_detalles/" + e.id}>
-                    <img className="img-card" src={e.imagen} alt="" />{" "}
-                  </Link>
-                  <h3> {e.name} </h3>
-                  <p> ${e.precio} </p>
-                </div>
+                <Link to={"/producto_detalles/" + e.id}>
+                  <div className="card">
+                    <img className="img-card" src={e.imagen} alt="" />
+                  </div>{" "}
+                </Link>
+                <h3> {e.name} </h3>
+                <p> ${e.precio} </p>
               </li>
             );
           })}
