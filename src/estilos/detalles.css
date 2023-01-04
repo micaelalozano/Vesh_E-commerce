@@ -1,0 +1,77 @@
+.detalle-container {
+  max-width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: aqua;
+}
+
+.left-detalle {
+  margin-left: 10%;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: black;
+  align-items: center;
+}
+
+.right-detalle {
+  width: 90%;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: blue;
+}
+
+.btn-contenedor {
+  display: flex;
+  flex-direction: row;
+  background-color: beige;
+}
+
+.btn-cart {
+  margin: 3px;
+}
+
+.icon-cart {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  margin-top: 4px;
+  margin-left: 7px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  float: left;
+}
+
+.btn-fav {
+  margin: 3px;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  margin: 1rem;
+  color: brown;
+}
+
+@media screen and (max-width: 700px) {
+  .detalle-container {
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
