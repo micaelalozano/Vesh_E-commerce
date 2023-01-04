@@ -10,6 +10,28 @@
   text-align: center;
 }
 
+.card {
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: "Ver mas";
+  font-size: 150%;
+  color: white;
+  background-color: rgba(51, 51, 51, 0.405);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transform: translateY(100%);
+  transition: transform .3s;
+}
+
+.card:hover::after {
+  transform: translateY(0);
+}
 
 .img-card {
   width: 100%;
