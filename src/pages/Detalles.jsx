@@ -46,6 +46,18 @@ const Detalles = () => {
             </button>
           </div>
           <hr />
+          <h4 className="pago">MÉTODOS DE PAGO</h4>
+          <p className="metodo">
+            Podés pagar con Tarjeta de Crédito y Débito, efectivo en puntos de
+            pago o dinero en cuenta de mercadopago.
+          </p>
+          <h4 className="pago">ENVIOS</h4>
+          <p className="metodo">RETIRO GRATIS EN SUCURSALES</p>
+          <p className="metodo">
+            Si vas a elegir envío por moto mensajería, el día de la entrega vas
+            a recibir un mail informando que tu paquete está en camino, las
+            entregas son de 9 a 20 hs. dentro de los plazos establecidos.
+          </p>
         </div>
       </div>
       <FootDos />
