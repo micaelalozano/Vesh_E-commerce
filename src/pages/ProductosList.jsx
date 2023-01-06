@@ -18,9 +18,7 @@ const ProductosList = () => {
       .then((productos) => {
         setProductos(productos);
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch();
   }, []);
 
   console.log(productos);

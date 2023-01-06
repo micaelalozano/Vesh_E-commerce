@@ -19,9 +19,7 @@ const TopList = () => {
       .then((productos) => {
         setProductos(productos);
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch();
   }, []);
 
   //Filtrar clase de producto:
