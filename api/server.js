@@ -4,6 +4,7 @@ const db = require("./db");
 const models = require("./models");
 const router = require("./routes");
 const cors = require("cors");
+const PORT = process.env.PORT || 3001;
 
 app.use(express.static("src"));
 
@@ -16,5 +17,7 @@ app.use("/api", router);
 
 db.sync({ force: false }).then(() => {
   console.log("Db Connected");
-  app.listen(3001, () => console.log("Servidor escuchando en el puerto 3001"));
+  app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
+});
 });

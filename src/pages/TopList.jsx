@@ -18,6 +18,9 @@ const TopList = () => {
       .then((res) => res.data)
       .then((productos) => {
         setProductos(productos);
+      })
+      .catch((err) => {
+        console.log(err);
       });
   }, []);
 
