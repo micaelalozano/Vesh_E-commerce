@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import axios from "axios";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import NavDos from "../components/NavDos";
 import HeadDos from "../components/HeadDos";
@@ -9,7 +9,7 @@ import Buscador from "../components/Buscador";
 import "../estilos/productosList.css";
 
 const ProductosList = () => {
-  /*{ const [productos, setProductos] = useState([]);
+  const [productos, setProductos] = useState([]);
 
   useEffect(() => {
     axios
@@ -21,33 +21,35 @@ const ProductosList = () => {
       .catch();
   }, []);
 
-  console.log(productos);}}*/
+  console.log(productos);
 
   return (
     <>
       <HeadDos />
       <NavDos />
       <Buscador />
-      <ul>
-        <div className="card-container"></div>
-      </ul>
+      {
+        <ul>
+          <div className="card-container">
+            {productos.map(function (e, i) {
+              return (
+                <li key={i}>
+                  <Link to={"/producto_detalles/" + e.id}>
+                    <div className="card">
+                      <img className="img-card" src={e.imagen} alt="" />
+                    </div>{" "}
+                  </Link>
+                  <h3> {e.name} </h3>
+                  <p> ${e.precio} </p>
+                </li>
+              );
+            })}
+          </div>
+        </ul>
+      }
       <FootDos />
     </>
   );
 };
-
-/* {  {productos.map(function (e, i) {
-            return (
-              <li key={i}>
-                <Link to={"/producto_detalles/" + e.id}>
-                  <div className="card">
-                    <img className="img-card" src={e.imagen} alt="" />
-                  </div>{" "}
-                </Link>
-                <h3> {e.name} </h3>
-                <p> ${e.precio} </p>
-              </li>
-            );
-          })}}*/
 
 export default ProductosList;

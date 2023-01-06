@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import axios from "axios";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import NavDos from "../components/NavDos";
 import HeadDos from "../components/HeadDos";
@@ -10,7 +10,7 @@ import "../estilos/productosList.css";
 import "../estilos/buscador.css";
 
 const VestidosList = () => {
-  /*{ const [productos, setProductos] = useState([]);
+  const [productos, setProductos] = useState([]);
 
   useEffect(() => {
     axios
@@ -28,7 +28,7 @@ const VestidosList = () => {
     if (productos[i].clase === "Vestido") {
       vestidos.push(productos[i]);
     }
-  }}*/
+  }
   ///////////////////////////////////////
 
   return (
@@ -37,14 +37,8 @@ const VestidosList = () => {
       <NavDos />
       <Buscador />
       <ul>
-        <div className="card-container"></div>
-      </ul>
-      <FootDos />
-    </>
-  );
-};
-
-/* {   {vestidos.map(function (e, i) {
+        <div className="card-container">
+          {vestidos.map(function (e, i) {
             return (
               <li key={i}>
                 <Link to={"/producto_detalles/" + e.id}>
@@ -56,6 +50,12 @@ const VestidosList = () => {
                 <p> ${e.precio} </p>
               </li>
             );
-          })}} */
+          })}
+        </div>
+      </ul>
+      <FootDos />
+    </>
+  );
+};
 
 export default VestidosList;
