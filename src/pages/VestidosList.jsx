@@ -10,7 +10,7 @@ import "../estilos/productosList.css";
 import "../estilos/buscador.css";
 
 const VestidosList = () => {
-  const [productos, setProductos] = useState([]);
+  /*{const [productos, setProductos] = useState([]);
 
   useEffect(() => {
     axios
@@ -55,7 +55,7 @@ const VestidosList = () => {
       </ul>
       <FootDos />
     </>
-  );
+  );}*/
 };
 
 export default VestidosList;

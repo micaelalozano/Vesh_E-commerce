@@ -10,7 +10,7 @@ import "../estilos/productosList.css";
 import "../estilos/buscador.css";
 
 const TopList = () => {
-  const [productos, setProductos] = useState([]);
+  /*{const [productos, setProductos] = useState([]);
 
   useEffect(() => {
     axios
@@ -56,7 +56,7 @@ const TopList = () => {
       </ul>
       <FootDos />
     </>
-  );
+  );}*/
 };
 
 export default TopList;

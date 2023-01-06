@@ -9,7 +9,7 @@ import Buscador from "../components/Buscador";
 import "../estilos/productosList.css";
 
 const ProductosList = () => {
-  const [productos, setProductos] = useState([]);
+  /*{ const [productos, setProductos] = useState([]);
 
   useEffect(() => {
     axios
@@ -21,7 +21,7 @@ const ProductosList = () => {
       .catch();
   }, []);
 
-  console.log(productos);
+  console.log(productos);}
 
   return (
     <>
@@ -46,8 +46,8 @@ const ProductosList = () => {
         </div>
       </ul>
       <FootDos />
-    </>
-  );
+    </> 
+  ); }*/
 };
 
 export default ProductosList;
