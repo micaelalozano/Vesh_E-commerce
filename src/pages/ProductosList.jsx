@@ -21,7 +21,7 @@ const ProductosList = () => {
       .catch();
   }, []);
 
-  console.log(productos);}
+  console.log(productos);}}*/
 
   return (
     <>
@@ -29,8 +29,14 @@ const ProductosList = () => {
       <NavDos />
       <Buscador />
       <ul>
-        <div className="card-container">
-          {productos.map(function (e, i) {
+        <div className="card-container"></div>
+      </ul>
+      <FootDos />
+    </>
+  );
+};
+
+/* {  {productos.map(function (e, i) {
             return (
               <li key={i}>
                 <Link to={"/producto_detalles/" + e.id}>
@@ -42,12 +48,6 @@ const ProductosList = () => {
                 <p> ${e.precio} </p>
               </li>
             );
-          })}
-        </div>
-      </ul>
-      <FootDos />
-    </> 
-  ); }*/
-};
+          })}}*/
 
 export default ProductosList;

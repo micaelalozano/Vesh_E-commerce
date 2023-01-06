@@ -28,7 +28,7 @@ const SweaterList = () => {
     if (productos[i].clase === "Sweater") {
       sweaters.push(productos[i]);
     }
-  }
+  }}*/
   ////////////////////////////////////////////
 
   return (
@@ -37,8 +37,14 @@ const SweaterList = () => {
       <NavDos />
       <Buscador />
       <ul>
-        <div className="card-container">
-          {sweaters.map(function (e, i) {
+        <div className="card-container"></div>
+      </ul>
+      <FootDos />
+    </>
+  );
+};
+
+/*{ {sweaters.map(function (e, i) {
             return (
               <li key={i}>
                 <Link to={"/producto_detalles/" + e.id}>
@@ -50,12 +56,6 @@ const SweaterList = () => {
                 <p> ${e.precio} </p>
               </li>
             );
-          })}
-        </div>
-      </ul>
-      <FootDos />
-    </>
-  );}*/
-};
+          })}}*/
 
 export default SweaterList;

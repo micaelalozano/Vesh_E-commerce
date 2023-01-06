@@ -10,7 +10,7 @@ import "../estilos/productosList.css";
 import "../estilos/buscador.css";
 
 const PantalonesList = () => {
- /*{const [productos, setProductos] = useState([]);
+  /*{ const [productos, setProductos] = useState([]);
 
   useEffect(() => {
     axios
@@ -28,7 +28,7 @@ const PantalonesList = () => {
     if (productos[i].clase === "Pantalon") {
       pantalones.push(productos[i]);
     }
-  }
+  }}*/
   ///////////////////////////////////////
 
   return (
@@ -37,8 +37,15 @@ const PantalonesList = () => {
       <NavDos />
       <Buscador />
       <ul>
-        <div className="card-container">
-          {pantalones.map(function (e, i) {
+        <div className="card-container"></div>
+      </ul>
+      <FootDos />
+    </>
+  );
+};
+
+//adentro del div va esto
+/*{  {pantalones.map(function (e, i) {
             return (
               <li key={i}>
                 <Link to={"/producto_detalles/" + e.id}>
@@ -50,12 +57,6 @@ const PantalonesList = () => {
                 <p> ${e.precio} </p>
               </li>
             );
-          })}
-        </div>
-      </ul>
-      <FootDos />
-    </>
-  );}*/
-};
+          })}}*/
 
 export default PantalonesList;
