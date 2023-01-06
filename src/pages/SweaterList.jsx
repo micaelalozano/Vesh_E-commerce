@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+//import axios from "axios";
 import { Link } from "react-router-dom";
 import NavDos from "../components/NavDos";
 import HeadDos from "../components/HeadDos";
@@ -10,7 +10,7 @@ import "../estilos/productosList.css";
 import "../estilos/buscador.css";
 
 const SweaterList = () => {
-  const [productos, setProductos] = useState([]);
+  /*{const [productos, setProductos] = useState([]);
 
   useEffect(() => {
     axios
@@ -28,7 +28,7 @@ const SweaterList = () => {
     if (productos[i].clase === "Sweater") {
       sweaters.push(productos[i]);
     }
-  }
+  }}*/
   ////////////////////////////////////////////
 
   return (
@@ -37,8 +37,14 @@ const SweaterList = () => {
       <NavDos />
       <Buscador />
       <ul>
-        <div className="card-container">
-          {sweaters.map(function (e, i) {
+        <div className="card-container"></div>
+      </ul>
+      <FootDos />
+    </>
+  );
+};
+
+/*{ {sweaters.map(function (e, i) {
             return (
               <li key={i}>
                 <Link to={"/producto_detalles/" + e.id}>
@@ -50,12 +56,6 @@ const SweaterList = () => {
                 <p> ${e.precio} </p>
               </li>
             );
-          })}
-        </div>
-      </ul>
-      <FootDos />
-    </>
-  );
-};
+          })}}*/
 
 export default SweaterList;
