@@ -6,12 +6,16 @@ import SearchIcon from "@mui/icons-material/Search";
 const Buscador = () => {
   return (
     <>
-        <form className="form-dos">
-          <input className="search-size" type="search" placeholder="Qué buscas?" />
-          <button className="btn-dos">
-            <SearchIcon className="icon-btn-2" />
-          </button>
-        </form>
+      <form className="form-dos">
+        <input
+          className="search-size"
+          type="search"
+          placeholder="Qué buscas?"
+        />
+        <button className="btn-dos">
+          <SearchIcon className="icon-btn-2" />
+        </button>
+      </form>
     </>
   );
 };

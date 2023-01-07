@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import axios from "axios";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import NavDos from "../components/NavDos";
 import HeadDos from "../components/HeadDos";
@@ -10,7 +10,7 @@ import "../estilos/productosList.css";
 import "../estilos/buscador.css";
 
 const VestidosList = () => {
-  /*{const [productos, setProductos] = useState([]);
+const [productos, setProductos] = useState([]);
 
   useEffect(() => {
     axios
@@ -55,7 +55,7 @@ const VestidosList = () => {
       </ul>
       <FootDos />
     </>
-  );}*/
+  );
 };
 
 export default VestidosList;

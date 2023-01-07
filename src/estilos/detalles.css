@@ -168,4 +168,8 @@ hr {
     text-transform: uppercase;
     font-size: x-large;
   }
+
+  .producto-des {
+    font-size: 14px;
+  }
 }
