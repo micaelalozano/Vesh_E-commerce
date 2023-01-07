@@ -18,10 +18,10 @@ const ProductosList = () => {
       .then((productos) => {
         setProductos(productos);
       })
-      .catch();
+      .catch((err) => console.log(err));
   }, []);
 
-  console.log(productos);
+  //console.log(productos);
 
   return (
     <>
